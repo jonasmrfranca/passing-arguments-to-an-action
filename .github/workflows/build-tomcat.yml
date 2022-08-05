@@ -13,8 +13,8 @@ jobs:
 
     - name: List project files and java version
       run: |
-          ls -ltr
-          java - version
+        ls -ltr
+        java - version
 
     - name: Check out Apache Tomcat
       uses: actions/checkout@v2
@@ -32,8 +32,8 @@ jobs:
 
     - name: List project files and java version
       run: |
-          ls -ltr
-          java -version
+        ls -ltr
+        java -version
 
     - name: Copy tomcat-users.xml into Tomcat configuration directory
       run: cp -v tomcat-users.xml ./tomcat/tomcat-users/xml
